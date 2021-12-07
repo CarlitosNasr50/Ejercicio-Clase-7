@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FORMULARIO</title>
+</head>
+<body>
+
+	<form action="pagina02.html" method="get"><!--method post-->
+		<table border="1">
+			<tr>
+				<td>Ingrese Nombre</td>
+				<td><input type="text" name="nom" maxlength="10" required autofocus></td>
+			</tr>
+			<tr> 
+				<td>Ingrese Documento</td>
+				<td><input type="text" name="Run" required></td>
+			</tr>
+			<tr> 
+				<td>Estado Civil</td>
+				<td>
+					Soltero <input type="radio" name="estado" value="Soltero">
+					Casado <input type="radio" name="estado" value="Casado">
+					Divorciado <input type="radio" name="estado" value="Divorciado">
+					Viudo <input type="radio" name="estado" value="Viudo">
+				</td>
+			</tr>
+			<tr>
+				<td>Vivienda</td>
+				<td><input type="checkbox" name="Casa"></td>
+			</tr>
+			<tr>
+				<td>Fecha</td>
+				<td><input type="date" name="fecha"></td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td><input type="Password" name="pass"></td>
+			</tr>
+			<tr>
+				<td>Seleccionar Ciudad</td>
+				<td>
+					<select name="Ciudad">
+						<option value="25">San Carlos</option>
+						<option value="23">Chillán</option>
+						<option value="21">San Nicolás</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Color</td>
+				<td><input type="color" name="col"></td>
+			</tr>
+			<tr>
+				<td>e-mail</td>
+				<td><input type="email" name="mail"></td>
+			</tr>
+			<tr>
+				<td>Observación 1</td>
+				<td><input type="text" name="Obs1" value="Solo Lectura" readonly size="40"></td>
+			</tr>
+			<tr>
+				<td>Observación 2</td>
+				<td><input type="text" name="Obs2" value="Desabilitado" disabled></td>
+			</tr>
+			<tr>
+				<td>Observación 3</td>
+				<td><input type="text" name="Obs3" value="Oculto" hidden></td>
+			</tr>	
+			<tr>
+				<td>Número</td>
+				<td><input type="number" name="num" min="10" max="100"></td>
+			</tr>				
+			<tr>
+				<td colspan="2"><input type="submit" name="boton" value="enviar"></td>
+			</tr>
+			
+		</table>
+		
+	</form>
+
+</body>
+</html>
